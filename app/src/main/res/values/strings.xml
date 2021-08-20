@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QrCodeScanner</string>
+    <string name="title_activity_add_tyre">AddTyreActivity</string>
+    <string name="notification_error_ssl_cert_invalid" translatable="false">SSL cert invalid</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

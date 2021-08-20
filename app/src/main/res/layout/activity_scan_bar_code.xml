@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:id="@+id/topspacer"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true" />
+
+    <Space
+        android:id="@+id/left_spacer"
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true" />
+
+    <Space
+        android:id="@+id/right_spacer"
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true" />
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txtBarcodeValue"
+        android:layout_below="@+id/topspacer"
+        android:layout_toLeftOf="@+id/right_spacer"
+        android:layout_toRightOf="@+id/left_spacer" />
+
+    <TextView
+        android:id="@+id/txtBarcodeValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_bottom_spacer"
+        android:gravity="center"
+        android:text="No Barcode Detected"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Space
+        android:id="@+id/text_bottom_spacer"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
